@@ -56,9 +56,6 @@ jobs:
           continue-on-error: true
           run: npm run coverage
 
-        - name: ls -ltra
-          run: ls -ltra
-
         - name: Upload Code Coverage Report
           uses: actions/upload-artifact@v3
           with:
