@@ -56,10 +56,13 @@ jobs:
           continue-on-error: true
           run: npm run code-coverage
 
+        - name: ls -ltra
+          run: ls -ltra
+
         - name: Upload Code Coverage Report
           uses: actions/upload-artifact@v3
           with:
-            name: Code_Coverage-Result
+            name: Code-Coverage-Result
             path: coverage
             retention-days: 5
 
